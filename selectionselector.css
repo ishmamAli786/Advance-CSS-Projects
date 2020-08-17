@@ -1,0 +1,8 @@
+::selection{
+    background-color:red;
+    color:white;
+}
+h2::selection{
+    background-color:green;
+    color:white;
+}
