@@ -1,0 +1,16 @@
+:root{
+    --ishmam:white;
+}
+div{
+    background-color:chocolate;
+}
+h1{
+    color:var(--ishmam);
+}
+h2{
+    color:var(--ishmam);
+}
+h3{
+    --ishmam:green;
+    color:var(--ishmam)
+}
