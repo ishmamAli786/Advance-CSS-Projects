@@ -1,0 +1,50 @@
+.wrapper{
+    width: 900px;
+    margin:0 auto;
+}
+.header{
+    width: 900px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.small-section{
+    width: 150px;
+    height: 60px;
+    background-color:gray;
+    float:left;
+}
+.big-section{
+    width: 700px;
+    height: 60px;
+    background-color: gray;
+    float:right;
+}
+.banner{
+    width: 900px;
+    height: 200px;
+    background-color: gray;
+    margin-bottom: 15px;
+}
+.img-area{
+    height: 400px;
+    width: 900px;
+    margin-bottom: 15px;
+}
+.img-1{
+    height: 400px;
+    width: 440px;
+    background-color: grey;
+    float:left;
+}
+.img-2{
+    height: 400px;
+    width: 440px;
+    background-color: gray;
+    float:right;
+}
+.footer{
+    width: 900px;
+    height: 200px;
+    background-color: gray;
+    text-align: center;
+}
