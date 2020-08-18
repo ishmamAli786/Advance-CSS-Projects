@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotation 360 degree in css</title>
+    <style>
+        #main{
+            width: 100vw;
+            height:100vh;
+            background-color: magenta;
+            display: grid;
+            place-items: center;
+        }
+        #sub:hover{
+            transform: rotate(360deg);
+            transition: 5s linear;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="sub">
+            <img src="images/a.jpg" height="200px" width="200px">
+        </div>
+    </div>
+</body>
+</html>
