@@ -1,0 +1,30 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --width:100vw;
+}
+.main_div{
+    width: var(--width);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #2980b9;
+    font-size: 5rem;
+}
+h1:after{
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    width: calc(var(--width) - 80vw);
+    height: 25px;
+    color: #1abc9c;
+    font-size: 3rem;
+    display: block;
+    margin:0 auto;
+    border-bottom: 3px solid black;
+}
