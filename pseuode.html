@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Befor and After pseudo Elements</title>
+        <link>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Grenze Gotisch', cursive;
+        }
+        :root{
+            --b-a-width: 20vw;
+            --b-w-m-width: 15vw;
+            --b-w-s-width: 20vw;
+        }
+        .main_div{
+            width: 100vw;
+            height: 100vh;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         h1{
+            text-align: center;
+            color: white;
+            text-shadow: 3px 3px 0 black;
+            position: relative;
+        }
+        /*
+        h1::before{
+            content: 'Full Stack Developer ';
+            display: block;
+        }
+        h1::after{
+            content: ' Youtuber';
+            display: block;
+        } */
+        h1::selection{
+            background-color: green;
+            
+        }
+        h1::before{
+            content: ""; 
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            width: var(--b-a-width);
+            transform:translateX(-50%);
+            border-top: 5px solid #2C3E50;
+        }
+        h1::after{
+            content: "";
+            position: absolute;
+            width: var(--b-a-width);
+            bottom: -10%;
+            transform:translateX(-50%);
+            left: 50%;
+            border-bottom: 5px solid #2C3E50;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <h1>Ishmam Ali Khan</h1>
+    </div>
+</body>
+</html>
