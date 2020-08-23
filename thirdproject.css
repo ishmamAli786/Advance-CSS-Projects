@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: #1a52f9;
+    background-image: linear-gradient(19deg, #1a52f9 0%, #b721ff 84%);
+    position: relative;
+}
+header::before{
+    content: "";
+    width:520px;
+    height: 550px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    background-image: url(images/IMG-20200115-WA0164.jpg);
+    background-size: 100%;
+    border-radius: 50%;
+}
+nav{
+    width:100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+.logo a{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu ul li{
+    display: inline-block;
+    margin:0 15px;
+    list-style:  none;
+    font-weight: bold;
+}
+.menu ul li a{
+    text-transform: capitalize;
+}
+.active,ul li:hover{
+    border-top: 2px solid #5dade2;
+    border-bottom: 2px solid #5dade2;
+}
+.contact_btn a{
+    background-color: #d465ef;
+    padding: 12px 26px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+}
+.contact_btn a:hover{
+    background: linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
+}
+
+
+/*CENTER CONTENT*/
+.center_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.center_content h1{
+    color: #fff;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    /* z-index:1; */
+}
+.center_content h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    text-transform: capitalize;
+    /* z-index: 1; */
+}
+.center_content h2::before{
+    content: "";
+    width: 80px;
+    height: auto;
+    border: 2px solid white;
+    position: absolute;
+    left: 40px;
+    bottom:0;
+    margin-bottom: 10px;
+}
+
+
+ /* font awesome style */
+
+ .social_network{
+     width: 100px;
+     height: auto;
+     position: absolute;
+     right: 0;
+     top: 40%;
+ }
+ .fa_icon{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background: linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+ }
+ .fa_icon:nth-child(even){
+     margin:20px 0;
+ }
+ .fa_icon:hover{
+     background: linear-gradient(to bottom, #d465ef 0%,  #615cfd 100%);
+ }
+ .grid_sec{
+     width: 300px;
+     height: 100px;
+     position: absolute;
+     left: 55%;
+     bottom:0%;
+ }
