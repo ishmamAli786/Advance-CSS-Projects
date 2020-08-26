@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.one,.two,.three{
+    border: 2px solid red;
+    width: 300px;
+}
+/* .one{
+    flex:3;
+}
+.two{
+    flex:1;
+}
+.three{
+    flex:1;
+} */
