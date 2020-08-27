@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes Number Based</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        /* main a{
+           
+            display:block;
+            background-color: aqua;
+            display: grid;
+            place-items: center;
+        } */
+        main{
+            width: 100vw;
+            height:100vh;
+           background-color: aqua;
+           display: grid;
+           place-items: center;
+       } 
+       main ul li:nth-child(even){
+           color:red;
+       }
+       main ul li:nth-child(odd){
+           color:yellow;
+       }
+       main ul li:nth-child(5){
+           color:white;
+       }
+       main ul li:first-child{
+           color:blue;
+       }
+       main ul li:last-child{
+           color:green;
+       }
+       main *{
+           margin-top: 10px;
+       }
+    </style>
+</head>
+<body>
+    <!-- <main>
+        <a>One</a>
+        <a>Two</a>
+        <a>Three</a>
+        <a>Four</a>
+        <a>Five</a>
+        <a>Six</a>
+        <a>Seven</a>
+        <a>Eight</a>
+        <a>Nine</a>
+        <a>Ten</a>
+    </main> -->
+    <main>
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+            <li>Seven</li>
+            <li>Eight</li>
+            <li>Nine</li>
+            <li>Ten</li>
+        </ul>
+    </main>
+</body>
+</html>
