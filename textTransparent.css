@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Kaushan Script', cursive;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/code.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    background-color: green;
+    padding: 0 10px;
+    mix-blend-mode: screen;
+}
+h1::selection{
+    color:white;
+    background-color: black;
+}
