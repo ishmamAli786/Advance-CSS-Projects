@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Image Effect</title>
+    <style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .main_header{
+        width:100vw;
+        height:100vh;
+        display:grid;
+        place-items:center;
+    }
+    .design{
+        position:relative;
+        width: 400px;
+        height: 400px;
+    }
+    .design > *,.blend > * {
+        position:absolute;
+        width: 400px;
+        height: 400px;
+    }
+    #rotateBorder{
+        border: 15px #eb311f solid;
+        transform:rotate(45deg);
+        box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+    }
+    .grid{
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .data-white{
+        background:#fff;
+    }
+    .blend{
+        mix-blend-mode:multiply;
+    }
+    img{
+        object-fit:cover;
+        
+    }
+    .design > img{
+        box-shadow: 0 0 20PX #bac3c3;
+    }
+    </style>
+</head>
+<body>
+    <div class="main_header">
+        <div class="design">
+            <!-- 1st image -->
+            <img src="images/cat.jpg" alt="cat image">
+            <div id="rotateBorder"></div>
+            <div class="grid">
+            <div class="data-white"></div>
+            <div></div>
+            <div></div>
+            <div class="data-white"></div>
+        </div>
+        <div class="blend">
+            <!-- 1st image -->
+            <img src="images/cat.jpg" alt="cat image"> 
+            <div class="grid">
+            <div></div>
+            <div class="data-white"></div>
+            <div class="data-white"></div>
+            <div></div>
+            
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
