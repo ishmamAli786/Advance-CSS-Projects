@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 ways to center Text</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body{
+            width:100vw;
+            height:100vh;
+            background-color: #227093;
+            display:grid;
+            place-items:center;
+        }
+        .main_div{
+            width: 40vw;
+            height:70vh;
+            border: 2px  solid #fff;
+            border-radius:5px;
+            color: #fff;
+            /* ist method
+            position:relative; */
+
+
+            /* 2nd method
+            display:table; */
+
+
+             /* 3rd method
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column; */
+
+
+
+            display:grid;
+            place-items:center;
+
+        }
+        /* ist method
+        .main_div h1{
+            position:absolute;
+            top:50%;
+            width: 100%;
+            text-align:center;
+            transform: translateY(-50%);
+        } */
+        /* 2nd method
+          .main_div h1{
+            display:table-cell;
+            vertical-align: middle;
+            text-align:center; 
+        }*/
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <h1>Ishmam Ali  Khan</h1>
+    </div>
+    
+</body>
+</html>
