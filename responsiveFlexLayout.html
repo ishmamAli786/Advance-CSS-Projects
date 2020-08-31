@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex Layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Mulish', sans-serif;
+        }
+        .grand-parent{
+            width: 100vw;
+            height: 100vh;
+            background: #dfe6e9;
+            color: white;
+        }
+        h1{
+            font-size: 4rem;
+            padding: 50px 0;
+            text-align: center;
+            color: #000;
+        }
+        p{
+            text-align:center;
+        }
+        .parents{
+            width:80vw;
+            height:auto;
+            margin:auto;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            flex-wrap: wrap;
+            transition: all 1s linear;
+        }
+        .child{
+            height:200px;
+            background: #81ecec;
+            box-shadow:0 0 20px #bac3c3;
+            flex:1 1 200px;
+            margin:20px;
+        }
+        .child:first-child{
+            background: #ffbe76;
+        }
+        .child:last-child{
+            background: #ff7979;
+        }
+        @media (max-width:768px){
+            .grand-parent{
+                height:auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grand-parent">
+        <h1>services</h1>
+        <div class="parents">
+            <div class="child">ishmamalikhan</div>
+            <div class="child">ishmamalikhan</div>
+            <div class="child">ishmamalikhan</div>
+        </div>
+    </div>
+</body>
+</html>
