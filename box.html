@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Box Shadow to transprent images</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .main_div{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        img:hover{
+            /* box-shadow: 1rem 1rem 1rem  grey; */
+            filter: drop-shadow(1rem 1rem 1rem  grey);
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+    <img src="images/balloon.jpg" alt="ballon">
+</div>
+</body>
+</html>
