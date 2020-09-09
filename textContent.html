@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Text Content With CSS Animation</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        main{
+            width:100vw;
+            height:100vh;
+            background: #7242f5;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .change-content::before{
+            content: "";
+            animation: changetext 10s linear infinite;
+            color:white;
+        }
+        @keyframes changetext{
+            0%{
+                content: 'ux developer';
+            }
+            20%{
+                content: 'ui developer';
+            }
+             40%{
+                content: 'web developer';
+            }
+             60%{
+                content: 'front end developer';
+            }
+             80%{
+                content: 'desginer';
+            }
+             20%{
+                content: 'full stack developer';
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1> I am a <span class="change-content"></span></h1>
+    </main>
+</body>
+</html>
